@@ -2,7 +2,7 @@ $conn = new-object system.data.SqlClient.sqlconnection;
 $cmd = new-object System.Data.SqlClient.SqlCommand;
 $da = New-Object System.Data.SqlClient.SqlDataAdapter;
 $tables = New-Object System.Data.DataTable;
-$connectionstring = "Data Source=172.22.150.163;Database=MVMPRODDB;Uid=sa;Pwd=Romans1010!;";
+$connectionstring = "";
 $cmd.Connection = $conn;
 $conn.ConnectionString = $connectionstring;
 $da.SelectCommand = $cmd;
